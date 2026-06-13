@@ -2,8 +2,7 @@ const std = @import("std");
 
 // Add vulkan include paths to module
 pub fn addIncludePaths(dep_b: *std.Build, module: *std.Build.Module) void {
-    module.addIncludePath(dep_b.path("include/vk_video"));
-    module.addIncludePath(dep_b.path("include/vulkan"));
+    module.addIncludePath(dep_b.path("include"));
 }
 
 pub fn build(b: *std.Build) void {
